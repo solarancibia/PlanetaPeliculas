@@ -38,6 +38,7 @@ padding-top: 0px;
 }
 body{
   background-image: url("../Resources/Fondo.png");
+  background-size: cover;
 }
 .navbar-brand{
   width: 111px;
