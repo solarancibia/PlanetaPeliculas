@@ -30,8 +30,16 @@ padding-top: 0px;
 padding-bottom: 0px;
 }
 .loguito{
-  width: 20%;
+  width: 100%;
+}
+#navbar{
+padding-bottom: 0px;
+padding-top: 0px;
 }
 body{
   background-image: url("./Fondo.png");
+}
+.navbar-brand{
+  width: 111px;
+margin-right: 17px;
 }
