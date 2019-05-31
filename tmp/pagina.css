@@ -1,0 +1,37 @@
+html{
+  cursor: url(./giphy.gif),default;
+}
+.tmdblogo{
+  width: 5%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.nombres{
+  position: absolute;
+bottom: 0px;
+right: 70px;
+font-size: x-small;
+color: white;
+}
+.integrantes{
+  text-decoration: underline;
+  position: absolute;
+bottom: 30px;
+font-size: x-small;
+right: 190px;
+color: white;
+}
+.nav-brand{
+  width: 200px;
+margin-right: 0px;
+height: 90px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.loguito{
+  width: 20%;
+}
+body{
+  background-image: url("./Fondo.png");
+}
