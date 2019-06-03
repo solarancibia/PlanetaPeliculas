@@ -1,6 +1,9 @@
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
+body{
+  cursor: url(../Resources/giphy.gif),default;
+}
 .tmdblogo{
   width: 5%;
   position: absolute;
