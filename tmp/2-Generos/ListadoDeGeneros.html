@@ -33,6 +33,42 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
+
+
+      <a class="uk-button uk-button-default" href="#modal-sections" uk-toggle>Open</a>
+
+<div id="modal-sections" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Login</h2>
+        </div>
+        <div class="uk-modal-body">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="">
+          <br>
+          <label for="genero">Genero</label>
+          <select class="" name="genero">
+            <option value="fem">
+              Femenino
+            </option>
+            <option value="masc">
+              Masculino
+            </option>
+            <option value="otro">
+              Otro
+            </option>
+          </select>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" name="email" value="">
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-primary" type="submit">Enviar</button>
+        </div>
+    </div>
+</div>
     </div>
   </nav>
     </header>

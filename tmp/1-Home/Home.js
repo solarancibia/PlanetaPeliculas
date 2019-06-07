@@ -15,5 +15,10 @@ reemplazo.innerText= "Bienvenid@" + " " + nombre
 //       }
 //     })
 
-// )
-// }
+      for (var i = 0; i < 6; i++) {
+        document.querySelector("CONTENEDOR").innerHTML += '<img class="posters" src="' + ALGOOO + '" alt="">')
+      }
+    }
+
+))
+}
