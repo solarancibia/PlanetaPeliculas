@@ -1,9 +1,9 @@
-
+window.addEventListener("load", function(){
 var nombre= prompt ("Ingrese su nombre")
 var reemplazo = document.querySelector("p.saludo")
 reemplazo.innerText= "Bienvenid@" + "" + nombre
 
-  fetch("URL")
+fetch("URL")
     .then(function(respuesta) {
       return respuesta.json()
     })
@@ -16,3 +16,4 @@ reemplazo.innerText= "Bienvenid@" + "" + nombre
     })
 
 )
+}
