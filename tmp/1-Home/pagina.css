@@ -10,9 +10,8 @@ body{
 }
 .tmdblogo{
   width: 5%;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+  position: relative;
+  float: right;
 }
 .saludo {
   font-family: Poppins;
@@ -22,19 +21,21 @@ body{
   font-size: 45px;
 }
 .nombres{
-  position: absolute;
-bottom: 0px;
-right: 70px;
+  position: relative;
 font-size: x-small;
 color: white;
+float: right;
 }
 .integrantes{
   text-decoration: underline;
-  position: absolute;
+  position: relative;
 bottom: 30px;
 font-size: x-small;
-right: 190px;
+float: right;
 color: white;
+}
+footer{
+  overflow: hidden;
 }
 .nav-brand{
   width: 200px;
