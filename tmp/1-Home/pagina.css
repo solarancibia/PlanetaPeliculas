@@ -35,6 +35,18 @@ padding-bottom: 0px;
 .loguito{
   width: 100%;
 }
+
+.homeImg {
+  overflow: hidden;
+}
+.posters{
+  position: relative;
+  float: left;
+  width: 24.25%;
+  margin-right: 0%;
+  
+}
+}
 #navbar{
 padding-bottom: 0px;
 padding-top: 0px;
