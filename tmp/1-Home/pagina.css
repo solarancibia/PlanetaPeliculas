@@ -20,6 +20,9 @@ body{
   text-align: center;
   font-size: 45px;
 }
+.uk-child-width-1-10{
+  width: 16.166%;
+}
 .nombres{
   position: relative;
 font-size: x-small;
