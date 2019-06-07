@@ -3,7 +3,8 @@ html{
 }
 body{
   cursor: url(../Resources/giphy.gif),default;
-  height: 100vh;
+  background-image: url("../Resources/Fondo.png");
+  background-size: cover;
 }
 .tmdblogo{
   width: 5%;
@@ -40,10 +41,7 @@ padding-bottom: 0px;
 padding-bottom: 0px;
 padding-top: 0px;
 }
-body{
-  background-image: url("../Resources/Fondo.png");
-  background-size: cover;
-}
+
 .navbar-brand{
   width: 111px;
 margin-right: 17px;

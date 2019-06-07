@@ -6,7 +6,6 @@ body{
   cursor: url(../Resources/giphy.gif),default;
   background-size: cover;
   background-image: url("../Resources/Fondo.png");
-  height: 100vh;
 }
 .tmdblogo{
   width: 5%;
