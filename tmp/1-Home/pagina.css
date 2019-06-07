@@ -16,9 +16,16 @@ body{
 .saludo {
   font-family: Poppins;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
   font-size: 45px;
+}
+.headers{
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  font-size: 35px;
 }
 .uk-child-width-1-10{
   width: 16.166%;
