@@ -43,8 +43,16 @@ padding-top: 0px;
 body{
   background-image: url("../Resources/Fondo.png");
   background-size: cover;
+  height: 100vh;
 }
 .navbar-brand{
   width: 111px;
 margin-right: 17px;
+}
+.saludo {
+  font-family: Poppins;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 45px;
 }
