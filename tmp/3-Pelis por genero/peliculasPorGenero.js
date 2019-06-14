@@ -1,10 +1,10 @@
 window.onload = function(){
-
-  var paramsString = "idGenero=28"
-  var searchParams = new URLSearchParams(paramsString);
+  var queryString = location.search
+  var searchParams = new URLSearchParams(queryString);
+  var id = searchParams.get("idGenero")
   //ACtion
   if(searchParams.has("idGenero")){
-    fetch("https://api.themoviedb.org/3/discover/movie?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28")
+    fetch("https://api.themoviedb.org/3/discover/movie?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres="+id)
         .then(function(respuesta) {
          return respuesta.json()
        })
