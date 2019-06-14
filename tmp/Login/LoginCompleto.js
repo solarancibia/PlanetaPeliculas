@@ -4,6 +4,9 @@ window.addEventListener("load",function() {
     // si hay data, mostrala
     document.querySelector("a#login").style.display = "none"
     welcomeUser()
+  }else {
+    welcomeUser()
+
   }
   // no hay data, no hago nada
 
