@@ -18,7 +18,7 @@ window.onload = function(){
 
          var div = "";
          div += '<li>'
-         div += '<div class="uk-position-center uk-panel"><h1>' + nombre + '</h1></div>'
+         div += '<a href="../3-Pelis por genero/peliculasPorGenero.html?idGenero='+id+'"><div class="uk-position-center uk-panel"><h1>' + nombre + '</h1></div></a>'
          div += '</li>'
 
 
