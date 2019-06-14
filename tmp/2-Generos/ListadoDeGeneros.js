@@ -23,6 +23,17 @@ if (sessionStorage.getItem("Usuario") != null) {
   }
 }
 
+function welcomeUser(){
+  var nombre = document.querySelector("input.name").value
+  console.log(nombre);
+  if (nombre.length===0) {
+    var nombre = sessionStorage.getItem("Usuario")
+  }
+
+  var reemplazo = document.querySelector("p.saludo")
+  reemplazo.innerText = "Welcome" + " " + nombre
+}
+
   // var nombre= prompt ("Ingrese su nombre")
   // var reemplazo = document.querySelector("p.saludo")
    //reemplazo.innerText= "Bienvenid@" + " " + nombre
