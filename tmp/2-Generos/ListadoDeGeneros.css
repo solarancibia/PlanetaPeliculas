@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
 body{
   cursor: url(../Resources/giphy.gif),default;
 
+}
+h1{
+  font-size: 16px;
 }
 .tmdblogo{
   width: 5%;
@@ -39,6 +43,24 @@ padding-bottom: 0px;
 #navbar{
 padding-bottom: 0px;
 padding-top: 0px;
+}
+.uk-child-width-1-10{
+  width: 16.166%;
+  height:100vh;
+
+}
+.headers{
+  font-family: Poppins;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+#generos h1{
+  font-family: Poppins;
+font-weight: bold;
+}
+#generos{
+  height:50vh;
 }
 body{
   background-image: url("../Resources/Fondo.png");
