@@ -8,14 +8,30 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
      return respuesta.json()
    })
     .then(function(informacion) {
-     var peliculas = informacion.data
+     var peliculas = informacion.results
+     console.log(informacion)
 
-     for (var i = 0; i < 6; i++) {
+     for (var i = 0; i < 6 ; i++) { //informacion.results.length
+       console.log('esto es informacion' + peliculas);
        var titulo = peliculas[i].title
-       var img = peliculas[i].poster_path
+       var url = 'https://image.tmdb.org/t/p/w500/'
+       var img =  peliculas[i].poster_path;
        var id = peliculas[i].id
-      document.querySelector("div.uk-position-relative uk-visible-toggle uk-light").innerHTML += '<img class="posters" src="https://' + img + '" alt="">'
+
+      var div;
+      div += '<li>'
+      div += '<img src=' + url + img + '>'
+      div += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
+      div += '</li>'
+
+      console.log(div);
+
+      document.querySelector("#listaPopulares").innerHTML += div
      }
     })
-)
-}
+
+ .catch(function(error) {
+   console.log("error "+ error)
+ })
+
+})
