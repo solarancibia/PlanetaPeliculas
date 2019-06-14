@@ -25,6 +25,7 @@ body{
   font-weight: bold;
   text-align: left;
   font-size: 35px;
+  padding-left: 10px;
 }
 #topRated{
   width: 20%;

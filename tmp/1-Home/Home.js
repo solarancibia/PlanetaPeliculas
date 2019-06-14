@@ -9,7 +9,7 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
      var peliculas = informacion.results
      console.log(informacion)
 
-     for (var i = 0; i < 6 ; i++) { //informacion.results.length
+     for (var i = 0; i < 10 ; i++) { //informacion.results.length
        console.log('esto es informacion' + peliculas);
        var titulo = peliculas[i].title
        var url = 'https://image.tmdb.org/t/p/w500/'
@@ -43,7 +43,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
      var peliculas = informacion.results
      console.log(informacion)
 
-     for (var i = 0; i < 6 ; i++) { //informacion.results.length
+     for (var i = 0; i < 10 ; i++) { //informacion.results.length
        console.log('esto es informacion' + peliculas);
        var titulo = peliculas[i].title
        var url = 'https://image.tmdb.org/t/p/w500/'
@@ -74,7 +74,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
       var peliculas = informacion.results
       console.log(informacion)
 
-      for (var i = 0; i < 6 ; i++) { //informacion.results.length
+      for (var i = 0; i < 10 ; i++) { //informacion.results.length
         console.log('esto es informacion' + peliculas);
         var titulo = peliculas[i].title
         var url = 'https://image.tmdb.org/t/p/w500/'
