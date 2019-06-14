@@ -50,4 +50,3 @@ if (sessionStorage.getItem("Usuario") != null) {
      .catch(function(error) {
        console.log("Error: " + error);
      })
- }
