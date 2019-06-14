@@ -26,8 +26,12 @@ body{
   text-align: left;
   font-size: 35px;
 }
-.uk-child-width-1-10{
-  width: 16.166%;
+#topRated{
+  width: 20%;
+}
+
+#comingSoon{
+  width: 20%;
 }
 .nombres{
   position: relative;
