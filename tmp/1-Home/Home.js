@@ -16,15 +16,15 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
        var img =  peliculas[i].poster_path;
        var id = peliculas[i].id
 
-      var div;
-      div += '<li>'
-      div += '<img src=' + url + img + '>'
-      div += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
-      div += '</li>'
+      var li;
+      li = '<li>'
+      li += '<img src=' + url + img + '>'
+      li += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
+      li += '</li>'
 
-      console.log(div);
+      console.log(li);
 
-      document.querySelector("#listaPopulares").innerHTML += div
+      document.querySelector("#listaPopulares").innerHTML += li
      }
     })
 
@@ -50,15 +50,15 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
        var img =  peliculas[i].poster_path;
        var id = peliculas[i].id
 
-      var div;
-      div += '<li>'
-      div += '<img src=' + url + img + '>'
-      div += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
-      div += '</li>'
+      var li;
+      li = '<li>'
+      li += '<img src=' + url + img + '>'
+      li += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
+      li += '</li>'
 
-      console.log(div);
+      console.log(li);
 
-      document.querySelector("#topRated").innerHTML += div
+      document.querySelector("#topRated").innerHTML += li
      }
     })
 
@@ -81,15 +81,15 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
         var img =  peliculas[i].poster_path;
         var id = peliculas[i].id
 
-       var div;
-       div += '<li>'
-       div += '<img src=' + url + img + '>'
-       div += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
-       div += '</li>'
+       var li;
+       li = '<li>'
+       li += '<img src=' + url + img + '>'
+       li += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
+       li += '</li>'
 
-       console.log(div);
+       console.log(li);
 
-       document.querySelector("#comingSoon").innerHTML += div
+       document.querySelector("#comingSoon").innerHTML += li
       }
      })
 
