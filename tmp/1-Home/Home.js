@@ -1,8 +1,4 @@
 window.addEventListener("load", function(){
-var nombre= prompt ("Ingrese su nombre")
-var reemplazo = document.querySelector("p.saludo")
-reemplazo.innerText= "Bienvenid@" + " " + nombre
-
 
 //API DE LA PELICULAS POPULARES
 fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447ebd91bded10750")
