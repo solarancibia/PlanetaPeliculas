@@ -1,4 +1,4 @@
-window.addEventListener("load", function(){
+window.onload = function(){
 
 //API DE LA PELICULAS POPULARES
 fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447ebd91bded10750")
@@ -32,7 +32,7 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
    console.log("error "+ error)
  })
 
-})
+
 
 // TOP RATED MOVIES
 fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US&page=1")
@@ -96,3 +96,4 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
   .catch(function(error) {
     console.log("error "+ error)
   })
+}
