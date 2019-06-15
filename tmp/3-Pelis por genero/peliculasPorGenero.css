@@ -19,6 +19,7 @@ bottom: 0px;
 right: 70px;
 font-size: x-small;
 color: white;
+
 }
 .integrantes{
   text-decoration: underline;
@@ -55,6 +56,10 @@ margin-right: 17px;
 .ul-genero li{
   float: left;
   width:20%;
+  margin-top: 50px;
+}
+.ul-genero{
+  padding:30px;
 }
 
 .uk-position-center.uk-panel h1 {
