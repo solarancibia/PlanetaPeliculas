@@ -34,6 +34,9 @@ body{
 #comingSoon{
   width: 20%;
 }
+#listaPopulares{
+  width: 20%;
+}
 .nombres{
   position: relative;
 font-size: x-small;
@@ -97,11 +100,11 @@ margin-right: 17px;
 
 
 
-@media only screen and (max-width: 768px){
-#topRated{
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation : portrait){
+#listaPopulares{
   width: 50%;
 }
-#listaPopulares{
+#topRated{
   width: 50%;
 }
 #comingSoon{
@@ -114,14 +117,14 @@ margin-right: 17px;
 
 
 
-@media only screen and (max-width: 320px) {
-  #topRated{
-    width: 100%;
-  }
-  #listaPopulares{
-    width: 100%;
-  }
-  #comingSoon{
-    width: 100%;
-  }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait){
+#listaPopulares{
+  width: 100%;
+}
+#topRated{
+  width: 100%;
+}
+#comingSoon{
+  width: 100%;
+}
 }
