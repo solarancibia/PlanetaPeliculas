@@ -15,21 +15,7 @@ body{
   bottom: 0px;
   right: 0px;
 }
-.nombres{
-  position: absolute;
-bottom: 0px;
-right: 70px;
-font-size: x-small;
-color: white;
-}
-.integrantes{
-  text-decoration: underline;
-  position: absolute;
-bottom: 30px;
-font-size: x-small;
-right: 190px;
-color: white;
-}
+
 .nav-brand{
   width: 200px;
 margin-right: 0px;
@@ -149,4 +135,28 @@ section{
   padding-top: 2px;
   border-radius: 15px;
 
+}
+
+.boton{
+  margin-bottom: 3%;
+}
+
+.boton div{
+  width: 2%;
+}
+
+.nombres{
+  position: absolute;
+bottom: 0px;
+right: 70px;
+font-size: x-small;
+color: white;
+}
+.integrantes{
+  text-decoration: underline;
+  position: absolute;
+bottom: 30px;
+font-size: x-small;
+right: 190px;
+color: white;
 }
