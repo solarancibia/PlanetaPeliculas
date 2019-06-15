@@ -66,3 +66,32 @@ margin-right: 17px;
   font-size: 15px;
   align-items: center;
 }
+
+.saludo {
+  font-family: Poppins;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 45px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation : portrait){
+.ul-genero li{
+  width: 50%;
+}
+}
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait){
+  .ul-genero li{
+    width: 100%;
+  }
+
+
+
+}
