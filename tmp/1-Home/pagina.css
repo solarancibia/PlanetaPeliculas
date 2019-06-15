@@ -89,3 +89,39 @@ padding-top: 0px;
   width: 111px;
 margin-right: 17px;
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+#topRated{
+  width: 50%;
+}
+#listaPopulares{
+  width: 50%;
+}
+#comingSoon{
+  width: 50%;
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+  #topRated{
+    width: 100%;
+  }
+  #listaPopulares{
+    width: 100%;
+  }
+  #comingSoon{
+    width: 100%;
+  }
+}
