@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
@@ -49,4 +51,61 @@ margin-right: 17px;
 }
 video{
   width: 45%;
+}
+
+.titulos{
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  padding-top: 22px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.genero{
+  font-family: Roboto Slab;
+  color: #faac18;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #030226;
+  width: 43%;
+
+}
+
+.lenguajes h2{
+  font-family: Poppins;
+  font-weight: normal;
+  color: white;
+  font-size: 25px;
+  padding-top: 20px;
+  background-color: #030226;
+}
+
+section{
+  padding-left: 10px;
+}
+
+.sinopsis h2{
+  font-family: Poppins;
+  font-weight: normal;
+  color: white;
+  font-size: 25px;
+  background-color: #030226;
+  margin-top: 160px;
+  width: 20%;
+}
+
+.posterPelicula {
+  overflow: hidden;
+  position: relative;
+}
+
+.posterPelicula img {
+  float: right;
+  width: 20%;
+  position: absolute;
+  top: 5%;
+  left: 72%;
+
+
 }
