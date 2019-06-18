@@ -18,6 +18,7 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
 
       var li;
       li = '<li>'
+      li += "<button class='estrellita'> &#9733; </button>"
       li += "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
       li += '<img src=' + url + img + '>'
       li += '<div class="uk-position-center uk-panel"><h1>' + titulo + '</h1></div>'
