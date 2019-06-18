@@ -114,6 +114,15 @@ section{
 
 }
 
+.detalles ul {
+  border-left: 7px solid #cf181f;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+  width: 9%;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
 .sinopsis p{
   border-left: 7px solid #cf181f;
   background-color: #f1f1f1;
