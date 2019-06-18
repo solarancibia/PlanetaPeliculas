@@ -37,6 +37,20 @@ body{
 #listaPopulares{
   width: 20%;
 }
+/* .headersHome{
+display: none;
+} */
+h1.headersHome{
+display: none;
+}
+
+li:hover h1.headersHome{
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
 .nombres{
   position: relative;
 font-size: x-small;
