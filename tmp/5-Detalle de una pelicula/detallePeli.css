@@ -12,7 +12,13 @@ body{
 .tmdblogo{
   width: 5%;
   position: absolute;
-  bottom: 0px;
+  bottom: -224px;
+  right: 0px;
+}
+
+p.nombres.integrantes{
+  position: absolute;
+  bottom: -221px;
   right: 0px;
 }
 
@@ -150,7 +156,7 @@ section{
 }
 
 .boton{
-  margin-bottom: 3%;
+  margin-bottom: 0%;
 }
 
 .boton div{

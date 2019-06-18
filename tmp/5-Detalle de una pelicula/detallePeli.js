@@ -39,21 +39,25 @@ var article = ""
       var fechaEstreno = informacion.release_date
         document.querySelector(".fechaEstreno span").innerHTML = fechaEstreno
 
+
       var trailer = "https://api.themoviedb.org/3/movie/"+ query + "/videos?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US"
 
       fetch (trailer)
         .then(function(respuesta) {
          return respuesta.json()
        })
-        .then(function(informacion) {
-         console.log(informacion)
-         document.querySelector("div.trailer iframe").src += "d72b8119ca0d802447ebd91bded10750"
+       .then (function(information){
+         console.log(information.results);
+         var arrayDePeliculas = information.results
+         var key = arrayDePeliculas[0].key
+         console.log(key);
+         document.querySelector("div.trailer iframe").src += key
        })
 
    })
    .catch(function(error) {
      console.log("error "+ error)
-
+      
   })
 
 })
