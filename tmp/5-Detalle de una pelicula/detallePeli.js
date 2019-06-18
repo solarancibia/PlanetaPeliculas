@@ -17,7 +17,7 @@ var article = ""
 
      var url = 'https://image.tmdb.org/t/p/w500/'
      var poster =informacion.poster_path
-     document.querySelector(".posterPelicula").innerHTML = '<img src=' + url + poster + '>'
+     document.querySelector("aside.posterPelicula").innerHTML = '<img src=' + url + poster + '>'
 
     article += "<ul>"
     var arrayDeGeneros = informacion.genres
@@ -28,10 +28,32 @@ var article = ""
     }
         document.querySelector (".detalles").innerHTML = article
 
+      var arrayDeIdiomas = informacion.spoken_languages
+      for (var i = 0; i < arrayDeIdiomas.length; i++) {
+        document.querySelector(".lenguajes ul").innerHTML += "<li>" + arrayDeIdiomas[i].name+ "</li>"
+      }
+
+      var resumen = informacion.overview
+      document.querySelector(".sinopsis p").innerHTML = resumen
+
+      var fechaEstreno = informacion.release_date
+        document.querySelector(".fechaEstreno span").innerHTML = fechaEstreno
+
+      var trailer = "https://api.themoviedb.org/3/movie/"+ query + "/videos?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US"
+
+      fetch (trailer)
+        .then(function(respuesta) {
+         return respuesta.json()
+       })
+        .then(function(informacion) {
+         console.log(informacion)
+         document.querySelector("div.trailer iframe").src += "d72b8119ca0d802447ebd91bded10750"
+       })
 
    })
    .catch(function(error) {
      console.log("error "+ error)
+
   })
 
 })

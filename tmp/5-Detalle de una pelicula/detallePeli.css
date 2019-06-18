@@ -91,7 +91,6 @@ section{
 }
 
 .posterPelicula {
-  overflow: hidden;
   position: relative;
 }
 
@@ -101,6 +100,7 @@ section{
   position: absolute;
   top: 5%;
   left: 72%;
+  margin-top: 2%;
 }
 
 .lenguajes ul {
@@ -113,7 +113,19 @@ section{
   border-bottom-right-radius:10px;
 
 }
+.sinopsis p{
+  text-align: justify;
+}
 
+.detalles ul {
+  border-left: 7px solid #cf181f;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+  width: 9%;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
 .sinopsis p{
   border-left: 7px solid #cf181f;
   background-color: #f1f1f1;
