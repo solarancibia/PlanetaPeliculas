@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("load",  function(){
   var urlFija = " https://image.tmdb.org/t/p/original/"
   var article = ""
 
@@ -39,3 +39,4 @@ window.onload = function() {
       console.log("Error: " + error);
     })
   }
+)

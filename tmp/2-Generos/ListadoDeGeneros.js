@@ -1,5 +1,4 @@
-window.onload = function(){
-
+window.addEventListener("load",  function(){
 
   // var nombre= prompt ("Ingrese su nombre")
   // var reemplazo = document.querySelector("p.saludo")
@@ -28,3 +27,4 @@ window.onload = function(){
      .catch(function(error) {
        console.log("Error: " + error);
      })}
+)
