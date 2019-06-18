@@ -52,18 +52,18 @@ li:hover h1.headersHome{
 }
 
 .nombres{
-  position: relative;
+  position: absolute;
 font-size: x-small;
 color: white;
-float: right;
+    right:80px;
 }
 .integrantes{
   text-decoration: underline;
-  position: relative;
-bottom: 30px;
+  position: absolute;
+  bottom: -1150px;
 font-size: x-small;
-float: right;
 color: white;
+        right: 200px;
 }
 footer{
   overflow: hidden;
