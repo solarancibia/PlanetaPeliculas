@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
@@ -6,26 +8,30 @@ body{
   background-image: url("../Resources/Fondo.png");
   background-size: cover;
 }
+footer{
+  background-color: rgba(193, 213, 244, 0.5);
+  height: 12vh;
+}
+.nombreIntegrantes{
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.nombres {
+  font-family: Roboto Slab;
+  font-size: small;
+  color: #faac18;
+  text-align: right;
+  position: absolute;
+  left: 81%;
+  top: 3vh;
+}
 .tmdblogo{
   width: 5%;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-.nombres{
-  position: absolute;
-bottom: 0px;
-right: 70px;
-font-size: x-small;
-color: white;
-}
-.integrantes{
-  text-decoration: underline;
-  position: absolute;
-bottom: 30px;
-font-size: x-small;
-right: 190px;
-color: white;
+    position: absolute;
+    left: 92%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 .nav-brand{
   width: 200px;

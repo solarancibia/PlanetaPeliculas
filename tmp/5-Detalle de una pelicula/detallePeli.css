@@ -9,17 +9,30 @@ body{
   background-size: cover;
 
 }
-.tmdblogo{
-  width: 5%;
-  position: absolute;
-  bottom: -224px;
-  right: 0px;
+footer{
+  background-color: rgba(193, 213, 244, 0.5);
+  height: 12vh;
+}
+.nombreIntegrantes{
+  position: relative;
+  padding-bottom: 1%;
 }
 
-p.nombres.integrantes{
+.nombres {
+  font-family: Roboto Slab;
+  font-size: small;
+  color: #faac18;
+  text-align: right;
   position: absolute;
-  bottom: -221px;
-  right: 0px;
+  left: 81%;
+  top: 3vh;
+}
+.tmdblogo{
+  width: 5%;
+    position: absolute;
+    left: 92%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .nav-brand{
@@ -161,20 +174,4 @@ section{
 
 .boton div{
   width: 2%;
-}
-
-.nombres{
-  position: absolute;
-bottom: 0px;
-right: 70px;
-font-size: x-small;
-color: white;
-}
-.integrantes{
-  text-decoration: underline;
-  position: absolute;
-bottom: 30px;
-font-size: x-small;
-right: 190px;
-color: white;
 }
