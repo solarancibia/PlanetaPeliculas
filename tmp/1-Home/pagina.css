@@ -95,6 +95,9 @@ margin-right: 17px;
 #pelispref{
   display: none;
 }
+button {
+    position: absolute;
+}
 
 
 
