@@ -46,18 +46,17 @@ var article = ""
         .then(function(respuesta) {
          return respuesta.json()
        })
-       .then (function(information){
-         console.log(information.results);
-         var arrayDePeliculas = information.results
-         var key = arrayDePeliculas[0].key
-         console.log(key);
-         document.querySelector("div.trailer iframe").src += key
+       .then (function(data){
+         console.log(data);
+         var trailer = data.results
+         var key =  trailer[0].key
+         document.querySelector("iframe").src = "https://www.youtube.com/embed/" + key
        })
 
    })
    .catch(function(error) {
      console.log("error "+ error)
-      
+
   })
 
 })

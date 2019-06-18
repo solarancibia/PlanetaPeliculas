@@ -64,8 +64,9 @@ margin-right: 17px;
 
 .uk-position-center.uk-panel h1 {
   font-size: 15px;
-  align-items: center;
+  text-align: center;
 }
+
 
 
 .saludo {
