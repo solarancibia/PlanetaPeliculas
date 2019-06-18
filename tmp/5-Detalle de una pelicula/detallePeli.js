@@ -40,11 +40,23 @@ var article = ""
         document.querySelector(".fechaEstreno span").innerHTML = fechaEstreno
 
       var trailer = "https://api.themoviedb.org/3/movie/"+ query + "/videos?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US"
-      document.querySelector(".trailer video").innerHTML = trailer
+
+      fetch (trailer)
+        .then(function(respuesta) {
+         return respuesta.json()
+       })
+        .then(function(informacion) {
+         console.log(informacion)
+       })
 
    })
    .catch(function(error) {
      console.log("error "+ error)
+
+     arrayDeVideos= informacion.results
+     for (var i = 0; i < arrayDeVideos.length; i++) {
+         document.querySelector(".trailer video").innerHTML += "<video src= https://www.youtube.com/watch?v="+  arrayDeVideos[i].id + "controls playsinline hidden uk-video></video>"
+     }
   })
 
 })
