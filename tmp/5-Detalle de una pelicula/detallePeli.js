@@ -47,16 +47,13 @@ var article = ""
        })
         .then(function(informacion) {
          console.log(informacion)
+         document.querySelector("div.trailer iframe").src += "d72b8119ca0d802447ebd91bded10750"
        })
 
    })
    .catch(function(error) {
      console.log("error "+ error)
 
-     arrayDeVideos= informacion.results
-     for (var i = 0; i < arrayDeVideos.length; i++) {
-         document.querySelector(".trailer video").innerHTML += "<video src= https://www.youtube.com/watch?v="+  arrayDeVideos[i].id + "controls playsinline hidden uk-video></video>"
-     }
   })
 
 })
