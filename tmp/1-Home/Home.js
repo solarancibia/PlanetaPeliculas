@@ -1,5 +1,7 @@
 window.addEventListener("load",  function(){
 
+
+
 //API DE LA PELICULAS POPULARES
 fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447ebd91bded10750")
     .then(function(respuesta) {
@@ -37,6 +39,7 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
 
 
 
+
 // TOP RATED MOVIES
 fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US&page=1")
     .then(function(respuesta) {
@@ -71,6 +74,8 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
    console.log("error "+ error)
  })
 
+
+
  fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US&page=1")
      .then(function(respuesta) {
       return respuesta.json()
@@ -88,7 +93,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
 
        var li;
        li = '<li>'
-      li += "<button onclick='agregarFavoritos()' class='estrellita'> &#9733; </button>"
+       li += "<button onclick='agregarFavoritos("+id+")' class='estrellita'> &#9733; </button>"
        li += "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
        li += '<img src=' + url + img + '>'
        li += '<div class="uk-position-center uk-panel divPelis"><h1 class= "headersHome">' + titulo + '</h1></div>'
@@ -107,6 +112,32 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
   })
 })
 
-function agregarFavoritos() {
-  alert("debo agregar esta peli a favoritos!!")
+
+
+
+// CUANDO INGRESO; DEBO INICIALIZAR EL ARRAY DONDE VOY A GUARDAR LAS PELIS FAVORITAS
+var arrayDePelisFavoritas = []
+
+
+function agregarFavoritos(id) {
+  alert("me clickearon!!!")
+  // PRIMERO, reviso si hay alguna peli FAVORITA (en el array)
+  if (arrayDePelisFavoritas.indexOf(id)===-1) {
+      // EN ESTE CASO NO ES FAVORITA
+      // pusheo el id dentro del array
+      arrayDePelisFavoritas.push(id)
+      // guardo en session el array, como es un objeto debo transformarlo a STRING
+      window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
+  } else {
+    // ESTA PELI YA ES FAVORITA
+    console.log(arrayDePelisFavoritas.indexOf(id));
+    // la saco del array
+    arrayDePelisFavoritas.splice(arrayDePelisFavoritas.indexOf(id),1)
+    console.log(arrayDePelisFavoritas);
+    // reemplazo el array que tenia la peli como favorita, por el array que ya no la tiene
+    window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
+  }
+
+  console.log(id);
+  console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
 }
