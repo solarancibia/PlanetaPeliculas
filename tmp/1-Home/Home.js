@@ -120,7 +120,7 @@ var arrayDePelisFavoritas = []
 
 
 function agregarFavoritos(id) {
-  alert("me clickearon!!!")
+  alert("The selected movie has been saved in your favorite movies")
   // PRIMERO, reviso si hay alguna peli FAVORITA (en el array)
   if (arrayDePelisFavoritas.indexOf(id)===-1) {
       // EN ESTE CASO NO ES FAVORITA
