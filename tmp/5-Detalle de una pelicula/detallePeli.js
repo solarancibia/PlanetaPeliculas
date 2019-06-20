@@ -58,8 +58,13 @@ var article = ""
      console.log("error "+ error)
 
   })
-  document.querySelector(".VerRecomendaciones").addEventListener("click", function(){
-fetch("https://api.themoviedb.org/3/movie/" + query + "/recommendations?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US")
+
+})
+var urlParams = new URLSearchParams(window.location.search);
+var query = urlParams.get('idDePeli');
+
+document.querySelector(".VerRecomendaciones").addEventListener("click", function(){
+fetch("https://api.themoviedb.org/3/movie/" + query + "/recommendations?api_key=ccaee37d8fbe5010cfb857e26fcce8d4")
 .then(function(respuesta){
 return respuesta.json()
 })
