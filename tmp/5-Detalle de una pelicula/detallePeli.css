@@ -156,6 +156,10 @@ section{
   width: 60%;
   border-top-right-radius:10px;
   border-bottom-right-radius:10px;
+
+}
+.sinopsis {
+    position: relative;
 }
 
 .fechaEstreno h2{
@@ -170,11 +174,52 @@ section{
   border-radius: 15px;
 
 }
-
+.fechaEstreno{
+  position: relative;
+}
 .boton{
   margin-bottom: 0%;
 }
 
 .boton div{
   width: 2%;
+}
+.trailer{
+  position: relative;
+}
+.boton{
+  position: relative;
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 992px) and (orientation : portrait){
+.posterPelicula img{
+    width: 40%;
+left: 370px;
+top: 15px;
+}
+.sinopsis{
+  top: 58px;
+
+}
+.fechaEstreno{
+top: 50px;
+}
+.trailer{
+
+}
+.boton{
+  
+}
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) and (orientation : portrait){
+.posterPelicula img{
+  width: 100%;
+}
 }
