@@ -61,6 +61,7 @@ video{
 .titulos{
   font-family: Poppins;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   font-weight: bold;
   padding-top: 22px;
   margin-bottom: 0px;

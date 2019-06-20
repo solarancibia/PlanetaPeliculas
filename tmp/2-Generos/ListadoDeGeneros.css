@@ -66,6 +66,7 @@ padding-top: 0px;
 #generos h1{
   font-family: Poppins;
 font-weight: bold;
+text-align: center;
 }
 #generos{
   height:50vh;
