@@ -1,6 +1,7 @@
 window.addEventListener("load",  function(){
 // guardo el arrayDePelisFavoritas que esta en sessionStorage
 arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"));
+console.log(arrayDePelisFavoritas);
 
 // checkeo que el array tenga por lo menos una peli favorita (un item)
 if (arrayDePelisFavoritas.length>0) {
