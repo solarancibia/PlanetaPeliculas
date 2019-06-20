@@ -121,7 +121,7 @@ margin-right: 17px;
 #pelispref{
   display: none;
 }
-button {
+button.estrellita {
     position: absolute;
 }
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+      <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="pagina.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,64 +13,62 @@
   </head>
   <body>
     <header>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="../1-Home/Home.html"> <img src="../Resources/logo.png" class="loguito" alt=""> </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../2-Generos/ListadoDeGeneros.html">Listado de Generos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PelisPreferidas.html">Pelis Preferidas</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <a  id="login" style="color:gold"; class="uk-button uk-button-default btn btn-outline-warning" href="#modal-sections" uk-toggle>Login</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="../1-Home/Home.html"> <img src="../Resources/logo.png" class="loguito" alt=""> </a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../2-Generos/ListadoDeGeneros.html">Listado de Generos<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PelisPreferidas.html">Pelis Preferidas</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-
-
-
-        <a  id="login" style="color:gold"; class="uk-button uk-button-default btn btn-outline-warning" href="#modal-sections" uk-toggle>Login</a>
-
-  <div id="modal-sections" uk-modal>
-      <div class="uk-modal-dialog">
-          <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="uk-modal-header">
-              <h2 class="uk-modal-title">Login</h2>
-          </div>
-          <div class="uk-modal-body">
-            <form class="logincompleto" action="ListadoDeGeneros.html" method="post">
-            <label for="nombre">Name</label>
-            <input class="name" type="text" name="name" value="" required>
-            <br>
-            <label for="genero">Gender</label>
-            <select class="" name="genero">
-              <option value="fem">
-                Female
-              </option>
-              <option value="mal">
-                Male
-              </option>
-              <option value="other">
-                Other
-              </option>
-            </select>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" value="" required>
-          </div>
-          <div class="uk-modal-footer uk-text-right">
-              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-              <button class="uk-button uk-button-primary" type="submit">Send</button>
-          </div>
-              </form>
-      </div>
+<div id="modal-sections" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Login</h2>
+        </div>
+        <div class="uk-modal-body">
+          <form class="logincompleto" action="Home.html" method="post">
+          <label for="nombre">Name</label>
+          <input class="name" type="text" name="name" value="" required>
+          <br>
+          <label for="genero">Gender</label>
+          <select class="" name="genero">
+            <option value="fem">
+              Female
+            </option>
+            <option value="mal">
+              Male
+            </option>
+            <option value="other">
+              Other
+            </option>
+          </select>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" name="email" value="" required>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="submit">Send</button>
+        </div>
+            </form>
+    </div>
   </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
     </header>
             <p class="saludo">Welcome</p>
             <div class="uk-position-relative uk-visible-toggle uk-light"  tabindex="-1" uk-slider>
