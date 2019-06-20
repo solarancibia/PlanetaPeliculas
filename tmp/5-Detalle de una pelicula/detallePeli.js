@@ -60,3 +60,24 @@ var article = ""
   })
 
 })
+var urlParams = new URLSearchParams(window.location.search);
+var query = urlParams.get('idDePeli');
+
+document.querySelector(".VerRecomendaciones").addEventListener("click", function(){
+fetch("https://api.themoviedb.org/3/movie/" + query + "/recommendations?api_key=ccaee37d8fbe5010cfb857e26fcce8d4")
+.then(function(respuesta){
+return respuesta.json()
+})
+.then(function(datos){
+console.log(datos)
+var recomendaciones = datos.results
+var r= ""
+console.log(recomendaciones);
+for (var i = 0; i < recomendaciones.length; i++) {
+document.querySelector(".peliculasRecomendadas").innerHTML+= '<li ><a href="detalle.html?idDePelicula='+recomendaciones[i].id +
+'"><img src="https://image.tmdb.org/t/p/original/' + recomendaciones[i].poster_path + '" alt=""></a></li>'
+}})
+.catch(function(){
+ console.log(error)
+})
+})

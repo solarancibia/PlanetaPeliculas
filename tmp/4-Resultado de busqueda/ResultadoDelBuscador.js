@@ -39,7 +39,7 @@ window.addEventListener("load",  function(){
 
         document.querySelector("ul.uk-grid-small").innerHTML += article
       }
-        showSlides(slideIndex);
+        // showSlides(slideIndex);
     })
     .catch(function(error) {
       console.log("Error: " + error);
