@@ -23,6 +23,8 @@ window.addEventListener("load",  function(){
           li = '<li>'
           li += "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
           li += '<img src=' + url + img + '>'
+          li += "<div class='uk-position-center uk-panel'><h1 class='headersGeneros'>"+titulo+"</h1></div>"
+          li += "</a>"
           li += '</li>'
 
           console.log(li);

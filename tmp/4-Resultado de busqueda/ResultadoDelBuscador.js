@@ -29,7 +29,7 @@ window.addEventListener("load",  function(){
         // article +=    '<div class="uk-card uk-card-default uk-card-body"></div>'
         // article +=    "</a>"
         // article += "</li>"
-        article = "<li> "
+        article = "<li class='miLi'> "
         article +='<div class="uk-card uk-card-default uk-card-body recuadro">'
         article +=    "<a href='../5-Detalle de una pelicula/detallePeli.html'>"
         article +=     "<img src= " + urlFija + url + " width='30%'><h1 class='headersSearch'>"+ title + "</h1>"

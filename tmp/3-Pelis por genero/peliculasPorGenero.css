@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
@@ -10,31 +11,36 @@ body{
 
 }
 footer{
-  background-color: rgba(193, 213, 244, 0.5);
-  height: 12vh;
+    background-color: rgba(112, 148, 181, 0.65);
+    height: 12vh;
+    overflow: hidden;
 }
-.nombreIntegrantes{
-  position: relative;
-  padding-bottom: 1%;
+
+.nombres {
+  font-family: Rubik;
+  font-size: small;
+  color: white;
+  text-align: right;
+  float: right;
+  padding-top: 1%;
+
+}
+
+.nombres ul {
+  border-right: 5px solid #ffffff;
+    list-style-type: none;
+    padding-right: 17px;
+
+}
+.tmdblogo{
+  width: 7%;
+    float: right;
+    padding: 1%;
+    padding-left: 1%;
+    padding-top: 0.7%;
 }
 #pelispref{
   display: none;
-}
-.nombres {
-  font-family: Roboto Slab;
-  font-size: small;
-  color: #faac18;
-  text-align: right;
-  position: absolute;
-  left: 81%;
-  top: 3vh;
-}
-.tmdblogo{
-  width: 5%;
-    position: absolute;
-    left: 92%;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 .nav-brand{
   width: 200px;
@@ -57,16 +63,33 @@ margin-right: 17px;
 }
 
 .contenedorPpal{
-  overflow: hidden;
   padding-bottom: 5%;
 }
 
 .ul-genero li{
-  float: left;
+  float: right;
   width:20%;
 }
 .ul-genero{
-  padding:30px;
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow: hidden;
+}
+
+div.uk-slider{
+  margin-bottom: 5%;
+}
+
+h1.headersGeneros{
+display: none;
+}
+
+li:hover h1.headersGeneros{
+  display: block;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-size: 25px;
 }
 
 .uk-position-center.uk-panel h1 {

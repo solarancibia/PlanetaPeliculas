@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 html{
   cursor: url(../Resources/giphy.gif),default;
 }
@@ -10,31 +11,36 @@ body{
 
 }
 footer{
-  background-color: rgba(193, 213, 244, 0.5);
-  height: 12vh;
+    background-color: rgba(112, 148, 181, 0.65);
+    height: 12vh;
+    overflow: hidden;
 }
-.nombreIntegrantes{
-  position: relative;
-  padding-bottom: 1%;
-}
-#pelispref{
-  display: none;
-}
+
 .nombres {
-  font-family: Roboto Slab;
+  font-family: Rubik;
   font-size: small;
-  color: #faac18;
+  color: white;
   text-align: right;
-  position: absolute;
-  left: 81%;
-  top: 3vh;
+  float: right;
+  padding-top: 1%;
+
+}
+
+.nombres ul {
+  border-right: 5px solid #ffffff;
+    list-style-type: none;
+    padding-right: 17px;
 }
 .tmdblogo{
-  width: 5%;
-    position: absolute;
-    left: 92%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  width: 7%;
+    float: right;
+    padding: 1%;
+    padding-left: 1%;
+    padding-top: 0.7%;
+}
+
+#pelispref{
+  display: none;
 }
 
 .nav-brand{
