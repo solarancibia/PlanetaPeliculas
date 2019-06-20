@@ -58,5 +58,21 @@ var article = ""
      console.log("error "+ error)
 
   })
-
+  document.querySelector(".VerRecomendaciones").addEventListener("click", function(){
+fetch("https://api.themoviedb.org/3/movie/" + query + "/recommendations?api_key=d72b8119ca0d802447ebd91bded10750&language=en-US")
+.then(function(respuesta){
+return respuesta.json()
+})
+.then(function(datos){
+console.log(datos)
+var recomendaciones = datos.results
+var r= ""
+console.log(recomendaciones);
+for (var i = 0; i < recomendaciones.length; i++) {
+document.querySelector(".peliculasRecomendadas").innerHTML+= '<li ><a href="detalle.html?idDePelicula='+recomendaciones[i].id +
+'"><img src="https://image.tmdb.org/t/p/original/' + recomendaciones[i].poster_path + '" alt=""></a></li>'
+}})
+.catch(function(){
+ console.log(error)
+})
 })
