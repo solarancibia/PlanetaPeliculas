@@ -150,9 +150,9 @@ section{
   background-color: #f1f1f1;
   list-style-type: none;
   padding: 10px 20px;
-  width: 9%;
   border-top-right-radius:10px;
   border-bottom-right-radius:10px;
+  width: 200px;
 }
 .sinopsis p{
   border-left: 7px solid #cf181f;
@@ -200,9 +200,9 @@ section{
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 992px) and (orientation : portrait){
 .posterPelicula img{
-    width: 40%;
-left: 370px;
-top: 15px;
+    width: 300px;
+left: 298px;
+top: 45px;
 }
 .sinopsis{
   top: 58px;
@@ -210,12 +210,22 @@ top: 15px;
 }
 .fechaEstreno{
 top: 50px;
+width: 500px;
 }
 .trailer{
-
+  left: 0px;
+top: 39px;
 }
 .boton{
-  
+  left: 0px;
+  top: 48px;
+  }
+}
+.genero{
+    width: 300px;
+}
+.lenguajes ul{
+  width: 200px;
 }
 }
 
