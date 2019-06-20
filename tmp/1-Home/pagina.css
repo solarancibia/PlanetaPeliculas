@@ -52,7 +52,9 @@ li:hover h1.headersHome{
   font-size: 25px;
 }
 
-
+#pelispref{
+  display: none;
+}
 footer{
   background-color: rgba(173, 10, 23, 0.5);
   height: 12vh;

@@ -22,6 +22,9 @@ footer{
   padding-bottom: 1%;
 }
 
+#pelispref{
+  display: none;
+}
 .nombres {
   font-family: Roboto Slab;
   font-size: small;
