@@ -220,7 +220,7 @@ top: 39px;
   left: 0px;
   top: 48px;
   }
-}
+
 .genero{
     width: 300px;
 }
@@ -230,12 +230,62 @@ top: 39px;
 }
 
 
-
-
-
-
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) and (orientation : portrait){
 .posterPelicula img{
-  width: 100%;
+  width: 270px;
+
+position: absolute;
+
+left: -1vh;
+
+top: 11vh;
+}
+.genero{
+position: relative;
+}
+.genero p{
+position: absolute;
+
+top: 65vh;
+
+width: 100vw;
+}
+.titulos{
+  position: absolute;
+
+  top: 31vh;
+}
+.detalles{
+position: relative;
+}
+.detalles ul{
+  position: absolute;
+
+bottom: -88vh;
+}
+.lenguajes{
+position: relative;
+}
+.lenguajes h2{
+  position: absolute;
+
+bottom: -98vh;
+
+width: 50vw;
+
+text-align: center;
+}
+.lenguajes ul{
+  position: absolute;
+
+  bottom: -105vh;
+
+  width: 45vw;
+}
+.sinopsis{
+position: relative;
+}
+.boton{
+  padding-bottom: 500px;
 }
 }
