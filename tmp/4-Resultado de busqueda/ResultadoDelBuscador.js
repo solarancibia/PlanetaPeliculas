@@ -17,7 +17,7 @@ window.addEventListener("load",  function(){
       var arrayDeBuscador = informacion.results
       console.log(arrayDeBuscador);
 
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 8; i++) {
         //var id = arrayDeBuscador[i].id
         var title = arrayDeBuscador[i].title
         var url =  arrayDeBuscador[i].poster_path
