@@ -22,6 +22,8 @@ footer{
     background-color: rgba(112, 148, 181, 0.65);
     height: 12vh;
     overflow: hidden;
+    position: relative;
+bottom: -13vh;
 }
 
 .nombres {
@@ -95,3 +97,26 @@ margin-right: 17px;
   text-align: center;
   font-size: 45px;
 }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 992px) and (orientation : portrait){
+section{
+width: 235%;
+}
+footer{
+
+}
+   }
+
+
+  @media only screen and (min-device-width: 0px) and (max-device-width: 480px) and (orientation : portrait){
+section{
+width: 237%;
+height: 73vw;
+
+}
+footer{
+  height: -1vw;
+
+}
+
+     }
