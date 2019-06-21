@@ -229,7 +229,7 @@ top: 39px;
   width: 200px;
 }
 section{
-  height: 72vh;
+  height: 130vh;
 }
 }
 
@@ -292,32 +292,32 @@ position: relative;
 }
 .sinopsis h2{
   position: absolute;
-  bottom: -139vh;
+  bottom: -140vh;
 width: 50vw;
 }
 .sinopsis p{
   position: absolute;
-  bottom: -154vh;
+  bottom: -185vh;
 }
 .BotonVerRecomendaciones{
   position: relative;
 }
 .BotonVerRecomendaciones button{
   position: absolute;
-  bottom: -178vh;
+  bottom: -211vh;
 
 }
 .fechaEstreno h2{
   position: absolute;
-  bottom: -165vh;
+  bottom: -198vh;
 width: 50vw;
 }
 section{
   position: relative;
-height: 190vh;
+height: 220vh;
 }
 .trailer button{
-  bottom: -175vh;
+  bottom: -205vh;
 
   position: absolute;
 }
