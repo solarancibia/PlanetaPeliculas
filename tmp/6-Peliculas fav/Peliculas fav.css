@@ -15,6 +15,22 @@ footer{
     overflow: hidden;
 }
 
+.saludo {
+  font-family: Poppins;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 45px;
+
+}
+.headers{
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  font-size: 35px;
+  padding-left: 10px;
+}
 .nombres {
   font-family: Rubik;
   font-size: small;
