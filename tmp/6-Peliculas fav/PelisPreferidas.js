@@ -23,8 +23,8 @@ if (arrayDePelisFavoritas.length>0) {
          var li;
          li = "<li>"
          li +=    "<a href=''></a>"
-         li +=    "<h2>"+pelicula.title+"</h2>"
          li +=    "<img src='"+urlImg + pelicula.poster_path +"'>"
+         li +=    '<div class="uk-position-center uk-panel divPelis"><h1 class="headersFav">' + pelicula.title + '</h1></div>'
          li +=    "</a>"
          li += "</li>"
          // modifico el HTML del UL
