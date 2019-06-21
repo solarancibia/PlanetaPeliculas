@@ -120,9 +120,10 @@ var arrayDePelisFavoritas = []
 
 
 function agregarFavoritos(id) {
-  alert("The selected movie has been saved in your favorite movies")
+
   // PRIMERO, reviso si hay alguna peli FAVORITA (en el array)
   if (arrayDePelisFavoritas.indexOf(id)===-1) {
+    alert("The selected movie has been saved in your favorite movies")
       // EN ESTE CASO NO ES FAVORITA
       // pusheo el id dentro del array
       arrayDePelisFavoritas.push(id)
@@ -130,6 +131,7 @@ function agregarFavoritos(id) {
       window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   } else {
     // ESTA PELI YA ES FAVORITA
+    alert("The selected movie has been removed from your favorite movies")
     console.log(arrayDePelisFavoritas.indexOf(id));
     // la saco del array
     arrayDePelisFavoritas.splice(arrayDePelisFavoritas.indexOf(id),1)
