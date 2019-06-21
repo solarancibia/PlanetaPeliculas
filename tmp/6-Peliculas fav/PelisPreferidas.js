@@ -114,7 +114,7 @@ if (arrayDePelisFavoritas.length>0) {
           // guardo en pelicula el objeto literal que recibo como respuesta
          console.log(pelicula)
          // capturo el UL para insertar dentro de el, cada peli como LI
-         var ul = document.querySelector("section ul")
+         var ul = document.querySelector("section ul.paQueAnde")
          // genero el LI
          var li;
          li = "<li>"
