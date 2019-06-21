@@ -97,8 +97,8 @@
 
 window.addEventListener("load",  function(){
 // guardo el arrayDePelisFavoritas que esta en sessionStorage
-arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"));
-
+var arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"));
+console.log(arrayDePelisFavoritas);
 // checkeo que el array tenga por lo menos una peli favorita (un item)
 if (arrayDePelisFavoritas.length>0) {
   // como arrayDePelisFavoritas es un array, necesito recorrerlo
@@ -114,14 +114,14 @@ if (arrayDePelisFavoritas.length>0) {
           // guardo en pelicula el objeto literal que recibo como respuesta
          console.log(pelicula)
          // capturo el UL para insertar dentro de el, cada peli como LI
-         var ul = document.querySelector("section ul.paQueAnde")
+         var ul = document.querySelector("ul.paQueAnde")
          // genero el LI
          var li;
          li = "<li>"
-         li +=  "<a href=''></a>"
-         li +=  "<img src='"+urlImg + pelicula.poster_path +"'>"
-          li += '<div class="uk-position-center uk-panel divPelis"><h1 class="headersFav">' + pelicula.title + '</h1></div>'
-          li += "</a>"
+         li +=    "<a href=''></a>"
+         li +=    "<img src='"+urlImg + pelicula.poster_path +"'>"
+          li +=    '<div class="uk-position-center uk-panel divPelis"><h1 class="headersFav">' + pelicula.title + '</h1></div>'
+          li +=    "</a>"
           li += "</li>"
          // modifico el HTML del UL
          ul.innerHTML += li
@@ -134,5 +134,6 @@ if (arrayDePelisFavoritas.length>0) {
   }
 
 }
+
 
 })

@@ -31,12 +31,10 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
 
       document.querySelector("#listaPopulares").innerHTML += li
      }
-
     })
 
  .catch(function(error) {
    console.log("error "+ error)
-
  })
 
 
@@ -129,10 +127,11 @@ function agregarFavoritos(id) {
       // EN ESTE CASO NO ES FAVORITA
       // pusheo el id dentro del array
       arrayDePelisFavoritas.push(id)
+      console.log(arrayDePelisFavoritas);
       // guardo en session el array, como es un objeto debo transformarlo a STRING
       window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   }
-   else {
+  else {
     // ESTA PELI YA ES FAVORITA
     alert("The selected movie has been removed from your favorite movies")
     console.log(arrayDePelisFavoritas.indexOf(id));
@@ -145,4 +144,6 @@ function agregarFavoritos(id) {
 
   console.log(id);
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+
+
 }
