@@ -198,6 +198,7 @@ section{
 }
 
 
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 992px) and (orientation : portrait){
 .posterPelicula img{
     width: 300px;
@@ -227,6 +228,9 @@ top: 39px;
 .lenguajes ul{
   width: 200px;
 }
+section{
+  height: 72vh;
+}
 }
 
 
@@ -238,7 +242,7 @@ position: absolute;
 
 left: -1vh;
 
-top: 11vh;
+top: 16vh;
 }
 .genero{
 position: relative;
@@ -246,14 +250,15 @@ position: relative;
 .genero p{
 position: absolute;
 
-top: 65vh;
+top: 76vh;
 
 width: 100vw;
 }
 .titulos{
   position: absolute;
 
-  top: 31vh;
+  top: 0vh;
+
 }
 .detalles{
 position: relative;
@@ -261,7 +266,7 @@ position: relative;
 .detalles ul{
   position: absolute;
 
-bottom: -88vh;
+bottom: -111vh;
 }
 .lenguajes{
 position: relative;
@@ -269,7 +274,7 @@ position: relative;
 .lenguajes h2{
   position: absolute;
 
-bottom: -98vh;
+bottom: -122vh;
 
 width: 50vw;
 
@@ -278,14 +283,42 @@ text-align: center;
 .lenguajes ul{
   position: absolute;
 
-  bottom: -105vh;
+  bottom: -131vh;
 
   width: 45vw;
 }
 .sinopsis{
 position: relative;
 }
-.boton{
-  padding-bottom: 500px;
+.sinopsis h2{
+  position: absolute;
+  bottom: -139vh;
+width: 50vw;
+}
+.sinopsis p{
+  position: absolute;
+  bottom: -154vh;
+}
+.BotonVerRecomendaciones{
+  position: relative;
+}
+.BotonVerRecomendaciones button{
+  position: absolute;
+  bottom: -178vh;
+
+}
+.fechaEstreno h2{
+  position: absolute;
+  bottom: -165vh;
+width: 50vw;
+}
+section{
+  position: relative;
+height: 190vh;
+}
+.trailer button{
+  bottom: -175vh;
+
+  position: absolute;
 }
 }
