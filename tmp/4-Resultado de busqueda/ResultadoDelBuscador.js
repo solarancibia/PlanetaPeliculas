@@ -21,7 +21,7 @@ window.addEventListener("load",  function(){
         //var id = arrayDeBuscador[i].id
         var title = arrayDeBuscador[i].title
         var url =  arrayDeBuscador[i].poster_path
-
+        var id = arrayDeBuscador[i].id
 
         // article = "<li> "
         // article +=    "<a href='../5-Detalle de una pelicula/detallePeli.html'>"
@@ -31,7 +31,7 @@ window.addEventListener("load",  function(){
         // article += "</li>"
         article = "<li class='miLi'> "
         article +='<div class="uk-card uk-card-default uk-card-body recuadro">'
-        article +=    "<a href='../5-Detalle de una pelicula/detallePeli.html'>"
+        article +=    "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
         article +=     "<img src= " + urlFija + url + " width='30%'><h1 class='headersSearch'>"+ title + "</h1>"
         article +=    '</div>'
         article +=    "</a>"
