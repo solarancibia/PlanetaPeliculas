@@ -8,6 +8,7 @@ body{
   cursor: url(../Resources/giphy.gif),default;
   background-image: url("../Resources/Fondo.png");
   background-size: cover;
+  height: 110vh;
 }
 footer{
     background-color: rgba(112, 148, 181, 0.65);
