@@ -8,7 +8,7 @@ body{
   cursor: url(../Resources/giphy.gif),default;
   background-image: url("../Resources/Fondo.png");
   background-size: cover;
-  height: 110vh;
+  height: 140vh;
 }
 footer{
     background-color: rgba(112, 148, 181, 0.65);
@@ -84,4 +84,8 @@ padding-top: 0px;
 .navbar-brand{
   width: 111px;
 margin-right: 17px;
+}
+
+button.estrellita {
+    position: absolute;
 }

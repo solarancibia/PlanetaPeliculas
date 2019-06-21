@@ -118,10 +118,10 @@ if (arrayDePelisFavoritas.length>0) {
          // genero el LI
          var li;
          li = "<li>"
-         li +=    "<a href=''></a>"
-         li +=    "<img src='"+urlImg + pelicula.poster_path +"'>"
-          li +=    '<div class="uk-position-center uk-panel divPelis"><h1 class="headersFav">' + pelicula.title + '</h1></div>'
-          li +=    "</a>"
+         li +=  "<a href=''></a>"
+         li +=  "<img src='"+urlImg + pelicula.poster_path +"'>"
+          li += '<div class="uk-position-center uk-panel divPelis"><h1 class="headersFav">' + pelicula.title + '</h1></div>'
+          li += "</a>"
           li += "</li>"
          // modifico el HTML del UL
          ul.innerHTML += li
@@ -134,6 +134,5 @@ if (arrayDePelisFavoritas.length>0) {
   }
 
 }
-
 
 })

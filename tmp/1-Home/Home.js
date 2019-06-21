@@ -20,7 +20,7 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
 
       var li;
       li = '<li>'
-      li += "<button class='estrellita'> &#9733; </button>"
+      li += "<button onclick='agregarFavoritos("+id+")' class='estrellita'> &#9733; </button>"
       li += "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
       li += '<img src=' + url + img + '>'
       li += '<div class="uk-position-center uk-panel divPelis"><h1 class="headersHome">' + titulo + '</h1></div>'
@@ -31,10 +31,12 @@ fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d72b8119ca0d802447e
 
       document.querySelector("#listaPopulares").innerHTML += li
      }
+
     })
 
  .catch(function(error) {
    console.log("error "+ error)
+
  })
 
 
@@ -58,7 +60,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d72b8119ca0d802447eb
 
       var li;
       li = '<li>'
-      li += "<button class='estrellita'> &#9733; </button>"
+      li += "<button onclick='agregarFavoritos("+id+")' class='estrellita'> &#9733; </button>"
       li += "<a href='../5-Detalle de una pelicula/detallePeli.html?idDePeli="+id+"'>"
       li += '<img src=' + url + img + '>'
       li += '<div class="uk-position-center uk-panel divPelis"><h1 class="headersHome">' + titulo + '</h1></div>'
